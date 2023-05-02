@@ -19,6 +19,9 @@ setopt SHARE_HISTORY
 # If set, parameter expansion, command substitution and arithmetic expansion are performed in prompts. Substitutions within prompts do not affect the command status. 
 setopt prompt_subst
 
+# Add coreults to PATH. 'coreutils' package from brew is required for dircolors to work.
+PATH="$PATH:/opt/homebrew/opt/coreutils/libexec/gnubin"
+
 # Dircolors
 eval "$(dircolors -b $HOME/.dir_colors)"
 
@@ -40,6 +43,3 @@ PS1='%/ ${vcs_info_msg_0_} '$'\n'"%n @ %m $ "
 
 
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
