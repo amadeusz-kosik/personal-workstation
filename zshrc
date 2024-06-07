@@ -33,13 +33,12 @@ precmd() { vcs_info }
 
 # VSC info formatting. See documentation for details:  https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#vcs_005finfo-Configuration
 zstyle ':vcs_info:*' 		check-for-changes 	true
-zstyle ':vcs_info:*' 		unstagedstr 		'%F{red}[unstaged]%f'
-zstyle ':vcs_info:*' 		stagedstr 			'%F{yellow}[staged]%f'
-zstyle ':vcs_info:*' 		actionformats 		'%F{blue}%s:%f [%b] %c%u %a %m'
-zstyle ':vcs_info:*' 		formats 			'%F{blue}%s:%f [%b] %c%u %m'
+zstyle ':vcs_info:*' 		unstagedstr 		' %F{red}[unstaged]%f'
+zstyle ':vcs_info:*' 		stagedstr 			' %F{yellow}[staged]%f'
+zstyle ':vcs_info:*' 		actionformats 		'%F{123}%s:%f [%b] %c%u %a %m'
+zstyle ':vcs_info:*' 		formats 			'%F{123}%s:%f [%b] %c%u %m'
 
 # Prompt
-PS1='%/ ${vcs_info_msg_0_} '$'\n'"%n @ %m $ "
-
-
+PROMPT='%B%F{green}%n%f%b @ %B%F{aqua}%m%f%b %B➜%b %1~ ${vcs_info_msg_0_} %* %(?.%F{green}√.%F{red}?%?)%f
+$ '
 
