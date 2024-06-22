@@ -27,6 +27,10 @@ eval "$(dircolors -b $HOME/.dir_colors)"
 
 autoload -Uz colors && colors
 
+# History search should look by prompted prefix.
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 # VCS info for prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
