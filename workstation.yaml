@@ -1,0 +1,7 @@
+---
+- name: Install and configure developer Workstation
+  connection: local
+  hosts: 127.0.0.1
+  roles:
+    - role: common
+    - role: shell

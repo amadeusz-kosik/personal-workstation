@@ -1,0 +1,15 @@
+- name: Create .git directory
+  file:
+    path: "~/.git"
+    state: directory
+
+- name: Copy commit template
+  template:
+    src: "git.commit-template"
+    dest: "~/.git/commit-template"
+
+- name: Register commit template
+  community.general.git_config:
+    scope: global
+    name: commit.template
+    value: "~/.git/commit-template"

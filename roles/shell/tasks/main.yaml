@@ -1,0 +1,20 @@
+- name: Setup coreutils (dircolors etc)
+  community.general.homebrew:
+    name:
+      - "coreutils"
+    state: present
+
+- name: Setup dircolors
+  template:
+    src: "dir_colors"
+    dest: "~/.dir_colors"
+
+- name: Setup vim configuration
+  template:
+    src: "vimrc"
+    dest: "~/.vimrc"
+
+- name: Setup ZSH configuration
+  template:
+    src: "zshrc"
+    dest: "~/.zshrc"
