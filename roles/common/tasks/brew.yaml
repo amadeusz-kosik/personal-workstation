@@ -1,0 +1,32 @@
+- name: Install brew packages
+  community.general.homebrew:
+    name:
+      - "coreutils"         # dir_colors & other shell utilities
+      - "elixir"            # Elixir programming language
+      - "git"               # Git VCS
+      - "hugo"              # Hugo website builder
+      - "mas"               # Mac App Store
+      - "n"                 # NPM manager
+      - "p7zip"             # 7z extractor for encrypted files
+      - "sbt"               # Package manager for Scala
+      - "homebrew/cask/blender"                   # 3D modeling suite
+      - "homebrew/cask/docker"                    # Linux containers' platform
+      - "homebrew/cask/gpg-suite-no-mail"         # GPG keys management CLI + UI
+      - "homebrew/cask/jetbrains-toolbox"         # JetBrains IDE manager
+      - "homebrew/cask/logi-options-plus"         # Logitech  mouse drivers
+      - "homebrew/cask/logitech-camera-settings"  # Logitech camera  drivers
+      - "homebrew/cask/mactex"                    # LaTeX for MacOSX
+      - "homebrew/cask/monitorcontrol"            # Software for controlling monitor display & audio
+      - "homebrew/cask/netnewswire"               # RSS reader
+      - "homebrew/cask/obs"                       # Screen recorder
+      - "homebrew/cask/skype"                     # Skype web calling software
+      - "homebrew/cask/sublime-text"              # Simple text editor
+      - "homebrew/cask/temurin@11"                # OpenJDK - LTS
+      - "homebrew/cask/temurin@21"                # OpenJDK - latest
+      - "homebrew/cask/texmaker"                  # LaTeX IDE
+      - "homebrew/cask/vlc"                       # Video player
+      - "homebrew/cask/yubico-authenticator"      # YubiKey software - authenticator
+      - "homebrew/cask/yubico-yubikey-manager"    # YubiKey software - key manager
+    state: present
+    update_homebrew: true
+    upgrade_all: true

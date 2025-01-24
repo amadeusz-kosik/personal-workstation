@@ -1,9 +1,3 @@
-- name: Setup coreutils (dircolors etc)
-  community.general.homebrew:
-    name:
-      - "coreutils"
-    state: present
-
 - name: Setup dircolors
   template:
     src: "dir_colors"

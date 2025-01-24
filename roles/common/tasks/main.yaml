@@ -1,12 +1,5 @@
-- name: Install JDK
-  community.general.homebrew:
-    name:
-      - "openjdk@11"
-      - "openjdk@17"
-      - "openjdk@21"
-    state: present
-    update_homebrew: true
-    upgrade_all: true
+- name: Setup brew packages
+  include_tasks: brew.yaml
 
 - name: Setup Mac Apple Store
   include_tasks: apple-store.yaml
