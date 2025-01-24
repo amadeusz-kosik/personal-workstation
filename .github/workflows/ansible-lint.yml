@@ -1,0 +1,15 @@
+# Source: https://github.com/marketplace/actions/run-ansible-lint
+name: ansible-lint
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  build:
+    name: Ansible Lint # Naming the build is important to use it as a status check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ansible-lint
+        uses: ansible/ansible-lint@main
