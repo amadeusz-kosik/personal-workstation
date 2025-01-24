@@ -1,2 +1,5 @@
 # MacOSX rubbish
 .DS_Store
+
+# Workspace from IntelliJ
+.idea/workspace.xml
