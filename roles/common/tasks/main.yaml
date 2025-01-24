@@ -7,3 +7,6 @@
     state: present
     update_homebrew: true
     upgrade_all: true
+
+- name: Setup Mac Apple Store
+  include_tasks: apple-store.yaml

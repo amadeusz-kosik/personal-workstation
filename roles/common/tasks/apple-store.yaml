@@ -1,0 +1,33 @@
+- name: Install Mac App Store CLI
+  community.general.homebrew:
+    name:
+      - "mas"
+    state: present
+
+
+- name: Upgrade all installed Mac App Store apps
+  community.general.mas:
+    upgrade_all: true
+
+- name: Install Mac App Store apps
+  community.general.mas:
+    id:
+      - "682658836"  # GarageBand
+      - "408981434"  # iMovie
+      - "409183694"  # Keynote
+      - "409203825"  # Numbers
+      - "409201541"  # Pages
+      - "497799835"  # XCode
+
+      - "1440147259" # AdGuard for Safari
+      - "1142578753" # OmniGraffle
+      - "1538878817" # UTM
+      - "1502834782" # Diarium
+      - "6444050820" # Draw Things
+      - "434808346"  # SimpleMind Pro
+
+      - "462058435"  # Microsoft Excel
+      - "462062816"  # Microsoft PowerPoint
+      - "462054704"  # Microsoft Word
+      - "1295203466" # Windows App
+    state: present
