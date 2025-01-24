@@ -9,12 +9,13 @@
       - "n"                 # NPM manager
       - "p7zip"             # 7z extractor for encrypted files
       - "sbt"               # Package manager for Scala
+      - "homebrew/cask/backblaze"                 # Backup software
       - "homebrew/cask/blender"                   # 3D modeling suite
       - "homebrew/cask/docker"                    # Linux containers' platform
       - "homebrew/cask/gpg-suite-no-mail"         # GPG keys management CLI + UI
       - "homebrew/cask/jetbrains-toolbox"         # JetBrains IDE manager
-      - "homebrew/cask/logi-options-plus"         # Logitech  mouse drivers
-      - "homebrew/cask/logitech-camera-settings"  # Logitech camera  drivers
+      - "homebrew/cask/logi-options-plus"         # Logitech mouse drivers
+      - "homebrew/cask/logitech-camera-settings"  # Logitech camera drivers
       - "homebrew/cask/mactex"                    # LaTeX for MacOSX
       - "homebrew/cask/monitorcontrol"            # Software for controlling monitor display & audio
       - "homebrew/cask/netnewswire"               # RSS reader
