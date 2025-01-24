@@ -18,3 +18,6 @@
   template:
     src: "zshrc"
     dest: "~/.zshrc"
+
+- name: Setup Git VCS
+  include_tasks: git.yaml
