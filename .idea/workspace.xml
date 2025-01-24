@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1a8044-4af5-467b-af6e-a284dcc05787" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/personal-workstation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/common/tasks/main.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/shell/tasks/git.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/shell/tasks/main.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workstation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dir_colors" beforeDir="false" afterPath="$PROJECT_DIR$/roles/shell/templates/dir_colors" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/commit-template" beforeDir="false" afterPath="$PROJECT_DIR$/roles/shell/templates/git.commit-template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/old/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vimrc" beforeDir="false" afterPath="$PROJECT_DIR$/roles/shell/templates/vimrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zshrc" beforeDir="false" afterPath="$PROJECT_DIR$/roles/shell/templates/zshrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/common/tasks/apple-store.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/common/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/common/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/shell/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/shell/tasks/main.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +21,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2s2XTatJoLtlwJwdKhTaCz6buBz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +43,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,7 +77,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737654652003</updated>
-      <workItem from="1737654653327" duration="941000" />
+      <workItem from="1737654653327" duration="1529000" />
+      <workItem from="1737715367919" duration="39000" />
+      <workItem from="1737715414485" duration="632000" />
     </task>
     <servers />
   </component>
