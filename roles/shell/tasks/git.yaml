@@ -1,12 +1,14 @@
 - name: Create .git directory
-  file:
+  ansible.builtin.file:
     path: "~/.git"
     state: directory
+    mode: "0700"
 
 - name: Copy commit template
-  template:
+  ansible.builtin.template:
     src: "git.commit-template"
     dest: "~/.git/commit-template"
+    mode: "0600"
 
 - name: Register commit template
   community.general.git_config:

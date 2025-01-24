@@ -1,5 +1,5 @@
 - name: Setup brew packages
-  include_tasks: brew.yaml
+  ansible.builtin.include_tasks: brew.yaml
 
 - name: Setup Mac Apple Store
-  include_tasks: apple-store.yaml
+  ansible.builtin.include_tasks: apple-store.yaml

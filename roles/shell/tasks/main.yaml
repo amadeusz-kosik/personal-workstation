@@ -1,17 +1,20 @@
 - name: Setup dircolors
-  template:
+  ansible.builtin.template:
     src: "dir_colors"
     dest: "~/.dir_colors"
+    mode: "0600"
 
 - name: Setup vim configuration
-  template:
+  ansible.builtin.template:
     src: "vimrc"
     dest: "~/.vimrc"
+    mode: "0600"
 
 - name: Setup ZSH configuration
-  template:
+  ansible.builtin.template:
     src: "zshrc"
     dest: "~/.zshrc"
+    mode: "0600"
 
 - name: Setup Git VCS
-  include_tasks: git.yaml
+  ansible.builtin.include_tasks: git.yaml

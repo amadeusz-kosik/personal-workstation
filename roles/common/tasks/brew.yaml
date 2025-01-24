@@ -1,6 +1,8 @@
 - name: Install brew packages
   community.general.homebrew:
     name:
+      - "ansible"           # ansible tool itself
+      - "ansible-lint"      # linter for ansible
       - "coreutils"         # dir_colors & other shell utilities
       - "elixir"            # Elixir programming language
       - "git"               # Git VCS
