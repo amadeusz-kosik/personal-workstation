@@ -11,6 +11,13 @@
       - "n"                 # NPM manager
       - "p7zip"             # 7z extractor for encrypted files
       - "sbt"               # Package manager for Scala
+    state: present
+    update_homebrew: true
+    upgrade_all: true
+
+- name: Install brew packages from cask
+  community.general.homebrew:
+    name:
       - "homebrew/cask/backblaze"                 # Backup software
       - "homebrew/cask/blender"                   # 3D modeling suite
       - "homebrew/cask/docker"                    # Linux containers' platform
@@ -31,15 +38,3 @@
       - "homebrew/cask/yubico-authenticator"      # YubiKey software - authenticator
       - "homebrew/cask/yubico-yubikey-manager"    # YubiKey software - key manager
     state: present
-    update_homebrew: true
-    upgrade_all: true
-  async: 1000
-  poll: 0
-  register: brew_register
-
-- name: Status - Install brew packages
-  async_status:
-    jid: "{{ brew_register.ansible_job_id }}"
-  register: brew_register
-  until: brew_register.finished
-  retries: 90
