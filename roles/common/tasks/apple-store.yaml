@@ -24,3 +24,13 @@
       - "462054704"  # Microsoft Word
       - "1295203466" # Windows App
     state: present
+  async: 1000
+  poll: 0
+  register: mas_register
+
+- name: Status - Install Mac App Store apps
+  async_status:
+    jid: "{{ mas_register.ansible_job_id }}"
+  register: mas_register
+  until: mas_register.finished
+  retries: 90

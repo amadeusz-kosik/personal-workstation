@@ -33,3 +33,13 @@
     state: present
     update_homebrew: true
     upgrade_all: true
+  async: 1000
+  poll: 0
+  register: brew_register
+
+- name: Status - Install brew packages
+  async_status:
+    jid: "{{ brew_register.ansible_job_id }}"
+  register: brew_register
+  until: brew_register.finished
+  retries: 90
