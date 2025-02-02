@@ -13,6 +13,13 @@
       - "497799835"  # XCode
     state: present
 
+- name: Install Mac App Store apps - Affinity software
+  community.general.mas:
+    id:
+      - "1616831348"  # Affinity Designer 2
+      - "1616822987"  # Affinity Photo 2
+      - "1606941598"  # Affinity Publisher 2
+    state: present
 
 - name: Install Mac App Store apps - Microsoft software
   community.general.mas:
@@ -23,14 +30,13 @@
       - "1295203466" # Windows App
     state: present
 
-
 - name: Install Mac App Store apps - other software
   community.general.mas:
     id:
       - "1440147259" # AdGuard for Safari
-      - "1142578753" # OmniGraffle
-      - "1538878817" # UTM
       - "1502834782" # Diarium
       - "6444050820" # Draw Things
+      - "1142578753" # OmniGraffle
       - "434808346"  # SimpleMind Pro
+      - "1538878817" # UTM
     state: present

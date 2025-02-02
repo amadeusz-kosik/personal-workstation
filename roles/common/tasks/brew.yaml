@@ -26,7 +26,6 @@
       - "homebrew/cask/logi-options-plus"         # Logitech mouse drivers
       - "homebrew/cask/logitech-camera-settings"  # Logitech camera drivers
       - "homebrew/cask/mactex"                    # LaTeX for MacOSX
-      - "homebrew/cask/monitorcontrol"            # Software for controlling monitor display & audio
       - "homebrew/cask/netnewswire"               # RSS reader
       - "homebrew/cask/obs"                       # Screen recorder
       - "homebrew/cask/skype"                     # Skype web calling software
