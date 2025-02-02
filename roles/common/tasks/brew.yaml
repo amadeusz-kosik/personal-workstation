@@ -13,27 +13,27 @@
       - "sbt"               # Package manager for Scala
     state: present
     update_homebrew: true
-    upgrade_all: true
 
 - name: Install brew packages from cask
-  community.general.homebrew:
+  community.general.homebrew_cask:
     name:
-      - "homebrew/cask/backblaze"                 # Backup software
-      - "homebrew/cask/blender"                   # 3D modeling suite
-      - "homebrew/cask/docker"                    # Linux containers' platform
-      - "homebrew/cask/gpg-suite-no-mail"         # GPG keys management CLI + UI
-      - "homebrew/cask/jetbrains-toolbox"         # JetBrains IDE manager
-      - "homebrew/cask/logi-options-plus"         # Logitech mouse drivers
-      - "homebrew/cask/logitech-camera-settings"  # Logitech camera drivers
-      - "homebrew/cask/mactex"                    # LaTeX for MacOSX
-      - "homebrew/cask/netnewswire"               # RSS reader
-      - "homebrew/cask/obs"                       # Screen recorder
-      - "homebrew/cask/skype"                     # Skype web calling software
-      - "homebrew/cask/sublime-text"              # Simple text editor
-      - "homebrew/cask/temurin@11"                # OpenJDK - LTS
-      - "homebrew/cask/temurin@21"                # OpenJDK - latest
-      - "homebrew/cask/texmaker"                  # LaTeX IDE
-      - "homebrew/cask/vlc"                       # Video player
-      - "homebrew/cask/yubico-authenticator"      # YubiKey software - authenticator
-      - "homebrew/cask/yubico-yubikey-manager"    # YubiKey software - key manager
+      - "backblaze"                 # Backup software
+      - "blender"                   # 3D modeling suite
+      - "docker"                    # Linux containers' platform
+      - "gpg-suite-no-mail"         # GPG keys management CLI + UI
+      - "jetbrains-toolbox"         # JetBrains IDE manager
+      - "krita"                     # Drawing tool
+      - "logi-options-plus"         # Logitech mouse drivers
+      - "logitech-camera-settings"  # Logitech camera drivers
+      - "mactex"                    # LaTeX for MacOSX
+      - "netnewswire"               # RSS reader
+      - "obs"                       # Screen recorder
+      - "skype"                     # Skype web calling software
+      - "sublime-text"              # Simple text editor
+      - "temurin@11"                # OpenJDK - LTS
+      - "temurin@21"                # OpenJDK - latest
+      - "texmaker"                  # LaTeX IDE
+      - "vlc"                       # Video player
+      - "yubico-authenticator"      # YubiKey software - authenticator
+      - "yubico-yubikey-manager"    # YubiKey software - key manager
     state: present
