@@ -1,3 +1,8 @@
+- name: Update brew
+  community.general.homebrew:
+    update_homebrew: true
+    upgrade_all: true
+
 - name: Install brew packages
   community.general.homebrew:
     name:
@@ -12,7 +17,11 @@
       - "p7zip"             # 7z extractor for encrypted files
       - "sbt"               # Package manager for Scala
     state: present
+
+- name: Update brew cask
+  community.general.homebrew_cask:
     update_homebrew: true
+    upgrade_all: true
 
 - name: Install brew packages from cask
   community.general.homebrew_cask:
